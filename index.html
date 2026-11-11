@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="pomodoro">
+      <section class="container">
+        <h1>Pomodoro</h1>
+        <article class="mode">
+          <button data-time="25" selected>Çalış</button>
+          <button data-time="5">Mola</button>
+        </article>
+        <article class="bar">
+          <div class="timer"></div>
+        </article>
+        <article class="controls">
+          <button class="start" onclick="Start()">Başlat</button>
+          <button class="reset" onclick="Reset()" disabled>Sıfırla</button>
+        </article>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all .3s ease;
+  -webkit-ta-highlight-color: transparent;
+}
+button:active {
+  transform: scale(.95);
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.pomodoro {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+}
+
+.container {
+  display: grid;
+  justify-items: center;
+  gap: 15px;
+  min-width: 300px;
+  padding: 25px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  background-color: #fff;
+}
+
+.mode {
+  display: flex;
+  gap: 12px;
+}
+.mode button {
+  padding: 7px 17px;
+  border-radius: 6px;
+  background-color: pink;
+  color: #666;
+}
+.mode button[selected] {
+  background-color: purple;
+  color: #fff;
+}
+
+.bar {
+  display: grid;
+  place-items: center;
+  width: 200px;
+  height: 200px;
+  border: 12px solid transparent;
+  border-radius: 50%;
+  margin-block: 10px 15px;
+  background: linear-gradient(white, white) padding-box, conic-gradient(from 180deg, blueviolet var(--progress, 360deg), transparent 0) border-box;
+}
+
+.timer {
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #222;
+}
+
+.controls {
+  display: flex;
+  gap: 15px;
+}
+
+.controls button {
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-transform: capitalize;
+  font-size: 17px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.controls button.start {
+  background-color: #007bff;
+}
+
+.controls button.reset {
+  background-color: orangered;
+  border: 1px solid transparent;
+}
+
+.controls button.reset:disabled {
+  background-color: lightgray;
+  color: #666;
+  border-color: #ccc;
+  pointer-events: none;
+}
