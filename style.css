@@ -9,7 +9,7 @@ button {
   cursor: pointer;
   background-color: transparent;
   transition: all .3s ease;
-  -webkit-ta-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
 }
 button:active {
@@ -35,7 +35,7 @@ body {
   display: grid;
   justify-items: center;
   gap: 10px;
-  min-width: 400px;
+  min-width: 380px;
   padding: 25px;
   border: 1px solid #ddd;
   border-radius: 20px;
