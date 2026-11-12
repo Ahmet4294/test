@@ -34,7 +34,7 @@ body {
 .container {
   display: grid;
   justify-items: center;
-  gap: 10px;
+  gap: 105px;
   min-width: 380px;
   padding: 25px;
   border: 1px solid #ddd;
@@ -88,7 +88,7 @@ h1 {
 }
 
 .controls button {
-  padding: 18px 30px;
+  padding: 14px 30px;
   border-radius: 30px;
   text-transform: capitalize;
   font-size: 20px;
