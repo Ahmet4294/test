@@ -9,10 +9,11 @@ button {
   cursor: pointer;
   background-color: transparent;
   transition: all .3s ease;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-ta-highlight-color: transparent;
+  touch-action: manipulation;
 }
 button:active {
-  transform: scale(.95);
+  transform: scale(.96);
 }
 
 html {
@@ -26,15 +27,15 @@ body {
 .pomodoro {
   display: grid;
   place-items: center;
-  height: 100vh;
+  height: 100dvh;
   background-color: #f7f7f7;
 }
 
 .container {
   display: grid;
   justify-items: center;
-  gap: 15px;
-  min-width: 300px;
+  gap: 10px;
+  min-width: 400px;
   padding: 25px;
   border: 1px solid #ddd;
   border-radius: 20px;
@@ -42,13 +43,19 @@ body {
   background-color: #fff;
 }
 
+h1 {
+  font-size: 43px;
+  margin-top: 10px;
+}
+
 .mode {
   display: flex;
   gap: 12px;
 }
 .mode button {
-  padding: 7px 17px;
-  border-radius: 6px;
+  font-size: 17px;
+  padding: 10px 27px;
+  border-radius: 10px;
   background-color: pink;
   color: #666;
 }
@@ -60,16 +67,16 @@ body {
 .bar {
   display: grid;
   place-items: center;
-  width: 200px;
-  height: 200px;
-  border: 12px solid transparent;
+  width: 300px;
+  height: 300px;
+  border: 18px solid transparent;
   border-radius: 50%;
   margin-block: 10px 15px;
   background: linear-gradient(white, white) padding-box, conic-gradient(from 180deg, blueviolet var(--progress, 360deg), transparent 0) border-box;
 }
 
 .timer {
-  font-size: 50px;
+  font-size: 80px;
   font-weight: 600;
   letter-spacing: 3px;
   color: #222;
@@ -81,10 +88,10 @@ body {
 }
 
 .controls button {
-  padding: 12px 25px;
+  padding: 18px 30px;
   border-radius: 30px;
   text-transform: capitalize;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 500;
   color: #fff;
 }
